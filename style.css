@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  letter-spacing: 1px;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0, 81%, 56%);
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100vw;
+}
+
+.header-wrapper i {
+  display: none;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-top: -12px;
+  margin-left: 15px;
+}
+
+.header-wrapper span {
+  font-size: 52px;
+  color: rgb(67, 64, 64);
+}
+
+#nav_links {
+  display: flex;
+  align-items: center;
+}
+
+#nav_links li {
+  list-style-type: none;
+}
+
+#nav_links a {
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 45px;
+  color: inherit;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+#nav_links a:hover {
+  color: red;
+}
+
+.ham-button {
+  display: none;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+ 
+}
+
+.main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1130px;
+}
+
+.main .main-wrapper img {
+  width: 25rem;
+}
+
+.main-wrapper h1 {
+  width: 38rem;
+  font-size: 4.8rem;
+  background-image: linear-gradient(
+    to left,
+    #f5bae7 0%,
+    #e6bbb2 2%,
+    hwb(28 89% 5%) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-wrapper .side-b p {
+  width: 520px;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: rgb(247, 246, 246);
+}
+
+.side-b .btn {
+  background: white;
+  padding: 12px;
+  width: 150px;
+  border-radius: 20px;
+  font-size: 1rem;
+  margin-top: 18px;
+  border: none;
+}
+
+.side-b .btn:hover {
+  color: white;
+  background-color: rgb(71, 203, 31);
+  border: none;
+}
+
+.main .menu-section {
+  width: 1130px;
+  display: flex;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  background: #673ab7; /* fallback for old browsers */
+  background: #ec6f66; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f3a183,
+    #ec6f66
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f3a183,
+    #ec6f66
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 1170px;
+  border-radius: 26px;
+  padding: 50px;
+  margin-top: 9rem;
+}
+
+.main .menu-section h1 {
+  text-align: center;
+}
+
+.main .menu-section .card {
+  width: 260px;
+  height: 350px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  color: rgb(31, 29, 29);
+  border-radius: 16px;
+}
+
+.menu-section .card p {
+  font-size: 13px;
+  margin-top: 20px;
+  width: 200px;
+}
+
+.main .menu-section .card img {
+  width: 12rem;
+
+  margin-bottom: 30px;
+  object-fit: cover;
+}
+
+#kimchi {
+  width: 8rem;
+}
+
+@media only screen and (max-width: 500px) {
+  #nav_links {
+    display: none;
+  }
+
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: cemter;
+  }
+
+  .main-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -3rem;
+  }
+
+  .main-wrapper .side-a img {
+    width: 16rem;
+  }
+
+  .main-wrapper .side-b {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .main-wrapper .side-b h1 {
+    font-size: 3rem;
+    width: 500px;
+    margin-top: 35px;
+  }
+
+  .main-wrapper .side-b p {
+    width: 420px;
+    margin-top: 55px;
+    font-size: 0.9rem;
+    text-align: centers;
+  }
+
+  .main-wrapper .side-b .btn {
+    margin-top: 55px;
+  }
+
+  #ham_button {
+    display: block;
+  }
+
+  .menu-section {
+    margin-top: 155px;
+  }
+}

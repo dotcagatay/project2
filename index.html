@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodie</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="header-wrapper">
+        <div class="logo">Foodie<span>.</span></div>
+        <nav class="navbar">
+          <ul id="nav_links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="ham-button" id="ham_button">
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </button>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main-wrapper">
+        <div class="side-a">
+          <img src="./images/pizza.png" alt="pizza" id="pizza" />
+        </div>
+        <div class="side-b">
+          <h1>A taste of the world.</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus quasi blanditiis perspiciatis illum, earum enim,
+            quisquam ipsum vel iure, assumenda omnis fuga. Libero, cumque esse
+            similique minus velit voluptates dolorem praesentium explicabo
+            omnis, nostrum quod laborum cum molestiae repellat ullam?
+          </p>
+          <button class="btn">Discover</button>
+        </div>
+      </div>
+      <div class="menu-section" id="menu">
+        <div class="card">
+          <img src="./images/margarithas.png" alt="margherita" />
+          <h3>Margherita <span class="fi fi-it"></span></h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            molestias quidem facilis, totam iure fugit!
+          </p>
+        </div>
+        <div class="card">
+          <img src="./images/kimchi.png" alt="kimchi" id="kimchi" />
+          <h3>Kimchi <span class="fi fi-kr"></span></h3>
+          <p>
+            Traditional Korean side dish made from fermented cabbage, radish, or
+            cucumber.
+          </p>
+        </div>
+        <div class="card">
+          <img src="./images/sarma.png" alt="sarma" />
+          <h3>Sarma <span class="fi fi-tr"></span></h3>
+          <p>
+            Traditional Turkish dish prepared by rolling minced meat or rice
+            fillings in grape leaves
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer class="footer"></footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="index.js"></script>
+    <script>
+      var leftSlide = {
+        origin: "bottom",
+        opacity: null,
+        duration: 1500,
+        reset: true,
+      };
+
+      ScrollReveal().reveal(".card", leftSlide);
+    </script>
+  </body>
+</html>
